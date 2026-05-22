@@ -1000,3 +1000,34 @@ img {
   color: #ffffff;
   transform: translateY(-1px);
 }
+
+/* ==========================================================================
+   FORZAR REJILLA HORIZONTAL EN PRODUCTOS ESTRELLA (CORRECCIÓN DEFINITIVA)
+   ========================================================================== */
+.star-products-section .container > div {
+  display: grid !important;
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  gap: 1.5rem !important;
+  width: 100% !important;
+}
+
+/* En tablets (pantallas medianas) se divide en 2 columnas */
+@media (min-width: 768px) {
+  .star-products-section .container > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* En computadoras (pantallas grandes) se alinea en 4 columnas horizontales */
+@media (min-width: 1024px) {
+  .star-products-section .container > div {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Forzar que cada tarjeta use el ancho completo asignado por la rejilla */
+.star-products-section .container > div > div {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
