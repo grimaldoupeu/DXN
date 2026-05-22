@@ -160,7 +160,7 @@ export default async function HomePage() {
         <div className="container education-grid">
           <div className="education-image-container">
             <Image 
-              src="https://images.unsplash.com/photo-1610970881699-44a5587caaec?q=80&w=800" 
+              src="https://i.ibb.co/tMfRbxpx/Hongo.jpg" 
               alt="Hongo Reishi Ganoderma Lucidum Orgánico" 
               width={500} 
               height={400}
