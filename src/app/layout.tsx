@@ -64,7 +64,7 @@ export default function RootLayout({
                 <ul className="footer-contact">
                   <li>
                     <Phone className="w-4 h-4 text-emerald-500" />
-                    <span>+51 987 654 321</span>
+                    <span>+51 900 895 483</span>
                   </li>
                   <li>
                     <Mail className="w-4 h-4 text-emerald-500" />

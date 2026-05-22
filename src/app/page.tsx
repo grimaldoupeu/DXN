@@ -133,15 +133,16 @@ export default async function HomePage() {
             </p>
           </div>
 
-          <div className="products-grid">
+          {/* AQUÍ SE HIZO EL CAMBIO: Se añadieron las clases de rejilla horizontal automática */}
+          <div className="products-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full justify-items-center">
             {starProducts.length > 0 ? (
               starProducts.map((product) => (
-                <div key={product.id} className="grid-item">
+                <div key={product.id} className="grid-item w-full flex justify-center">
                   <ProductCard product={product} />
                 </div>
               ))
             ) : (
-              <p className="no-products">
+              <p className="no-products col-span-full">
                 No se encontraron productos estrella en este momento. Visita el catálogo completo.
               </p>
             )}
