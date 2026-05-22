@@ -1030,15 +1030,18 @@ img {
 .star-products-section .container > div:not(.section-header):not(.view-catalog-container) {
   display: grid !important;
   grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
-  gap: 1.5rem !important;
+  gap: 2rem !important;
   width: 100% !important;
   margin-bottom: 3rem !important;
+  padding: 0 1rem !important;
+  max-width: 100% !important;
 }
 
 /* Pantallas Medianas (Tablets) - 2 Columnas */
 @media (min-width: 640px) {
   .star-products-section .container > div:not(.section-header):not(.view-catalog-container) {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2.5rem !important;
   }
 }
 
@@ -1046,16 +1049,18 @@ img {
 @media (min-width: 1024px) {
   .star-products-section .container > div:not(.section-header):not(.view-catalog-container) {
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-    gap: 2rem !important;
+    gap: 2.5rem !important;
+    padding: 0 2rem !important;
   }
 }
 
 /* Asegurar que las tarjetas de producto no se deformen ni se achiquen */
 .star-products-section .container > div:not(.section-header):not(.view-catalog-container) > div {
   width: 100% !important;
-  min-width: 250px !important; /* Evita que queden como fideos */
+  min-width: 200px !important;
   display: flex !important;
   justify-content: center !important;
+  align-items: stretch !important;
 }
 
 /* ARREGLAR EL BOTÓN VERDE CIRCULAR EXTRÁNEO */
