@@ -133,21 +133,18 @@ export default async function HomePage() {
             </p>
           </div>
 
-          {/* CAMBIO LOGRADO: Contenedor forzado a cuadrícula horizontal limpia sin interferencias de clases viejas */}
-          <div className="w-full block my-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full justify-items-center">
-              {starProducts.length > 0 ? (
-                starProducts.map((product) => (
-                  <div key={product.id} className="w-full flex justify-center">
-                    <ProductCard product={product} />
-                  </div>
-                ))
-              ) : (
-                <p className="no-products col-span-full text-center">
-                  No se encontraron productos estrella en este momento. Visita el catálogo completo.
-                </p>
-              )}
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full justify-items-center">
+            {starProducts.length > 0 ? (
+              starProducts.map((product) => (
+                <div key={product.id} className="w-full flex justify-center">
+                  <ProductCard product={product} />
+                </div>
+              ))
+            ) : (
+              <p className="no-products col-span-full text-center">
+                No se encontraron productos estrella en este momento. Visita el catálogo completo.
+              </p>
+            )}
           </div>
 
           <div className="view-catalog-container">
