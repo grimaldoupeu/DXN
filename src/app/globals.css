@@ -403,6 +403,8 @@ img {
   overflow-x: hidden;
 }
 
+
+
 /* HERO */
 .hero-section {
   padding: 60px 0 100px 0;
@@ -457,6 +459,28 @@ img {
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
+  }
+  .hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px;
+  }
+  .hero-usp {
+    justify-content: center !important;
+  }
+  .hero-actions {
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+  .hero-image-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .hero-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 .hero-desc {

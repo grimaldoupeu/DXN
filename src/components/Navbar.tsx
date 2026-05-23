@@ -155,22 +155,8 @@ export default function Navbar() {
 
       {/* ESTILOS EN LÍNEA DE SOPORTE PARA FLEXIBILIDAD (EVITA TAILWIND SI NO SE INSTALA) */}
       <style jsx global>{`
-        .container {
-          width: 100%;
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 0 24px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        }
         header {
           transition: all 0.3s ease;
-        }
-        nav {
-          display: flex;
-          align-items: center;
-          gap: 2rem;
         }
         .flex { display: flex; }
         .items-center { align-items: center; }
@@ -186,12 +172,6 @@ export default function Navbar() {
         .top-0 { top: 0; }
         .left-0 { left: 0; }
         .right-0 { right: 0; }
-        .hidden { display: none; }
-        @media (min-width: 768px) {
-          .hidden { display: flex; }
-          .md\:flex { display: flex; }
-          .md\:hidden { display: none; }
-        }
         .rounded-full { border-radius: 9999px; }
         .w-10 { width: 2.5rem; }
         .h-10 { height: 2.5rem; }
@@ -204,6 +184,11 @@ export default function Navbar() {
         .shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
         .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
         .bg-white { background-color: #ffffff; }
+        .hidden { display: none; }
+        @media (min-width: 768px) {
+          .md\:flex { display: flex; }
+          .md\:hidden { display: none; }
+        }
         .animate-bounce {
           animation: bounce 1s infinite;
         }
