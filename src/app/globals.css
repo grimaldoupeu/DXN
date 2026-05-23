@@ -1005,6 +1005,13 @@ img {
    PRODUCTOS ESTRELLA - GRID CENTRADO 4 COLUMNAS
    ========================================================================== */
 
+/* Contenedor en columna para centrar todo */
+.star-products-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Cabecera centrada y a ancho completo */
 .star-products-section .section-header {
   width: 100%;
